@@ -21,6 +21,7 @@ public class WebSteps {
         $(".header-search-input").sendKeys(repository);
         $(".header-search-input").submit();
     }
+
     @Step("Переходим в репозиторий {repository}")
     public void goToRepository(String repository) {
         $(By.linkText(repository)).click();
@@ -34,6 +35,5 @@ public class WebSteps {
     @Step("Поверяем что Issue с номером 68 существует")
     public void shouldSeeIssueWithNumber(int number) {
         $(withText("#" + number)).should(Condition.exist);
-
     }
 }
