@@ -6,7 +6,7 @@ public class AnnotatedStepTest {
     private final static String REPOSITORY = "eroshenkoam/allure-example";
     private final static int ISSUE_NUMBER = 68;
 
-   private WebSteps steps = new WebSteps();
+    private WebSteps steps = new WebSteps();
 
     @Test
     public void testSearch() {
